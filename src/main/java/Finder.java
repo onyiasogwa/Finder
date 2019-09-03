@@ -1,6 +1,6 @@
 public class Finder {
     public static Integer findMax(int[] intArray) {
-        if (intArray == null) {
+        if (intArray == null || intArray.length == 0) {
             return null;
         }
         int Max = intArray[0];
