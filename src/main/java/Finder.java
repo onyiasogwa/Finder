@@ -13,12 +13,12 @@ public class Finder {
     }
 
     public static Integer findMin(int[] intArray) {
-        if (intArray == null) {
+        if (intArray == null || intArray.length == 0) {
             return null;
         }
         int Min = intArray[0];
         for (int i=1; i<intArray.length; i++) {
-            if (intArray[i] > Min) {
+            if (intArray[i] < Min) {
                 Min =intArray[i];
             }
         }
